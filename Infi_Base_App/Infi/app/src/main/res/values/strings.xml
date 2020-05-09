@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Infi</string>
+    <string name="chat_with_us">Chat With Us</string>
+    <string name="mail">Send a Mail</string>
+    <string name="call">Make a Call</string>
+    <string name="login">Login</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="new_user_sign_up">New User? Sign Up</string>
+    <string name="having_trouble_contact_us">Having Trouble? Contact Us</string>
+</resources>
