@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back0"
+    tools:context=".RegistrationActivity">
+
+    <EditText
+        android:id="@+id/iitbroll"
+        android:layout_width="235dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="IITB Roll No."
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mobileNo" />
+
+    <EditText
+        android:id="@+id/etn"
+        android:layout_width="235dp"
+        android:layout_height="51dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.065" />
+
+    <EditText
+        android:id="@+id/ete"
+        android:layout_width="235dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etn" />
+
+    <EditText
+        android:id="@+id/etp"
+        android:layout_width="235dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ete"
+        app:layout_constraintTop_toBottomOf="@+id/ete" />
+
+    <Button
+        android:id="@+id/ets"
+        android:layout_width="113dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="324dp"
+        android:text="Sign Up"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etp" />
+
+    <TextView
+        android:id="@+id/eti"
+        android:layout_width="210dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="8dp"
+        android:breakStrategy="high_quality"
+        android:text="Already have an account? Login"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#5E0FEC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ets" />
+
+    <TextView
+        android:id="@+id/contactReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="116dp"
+        android:text="Having Trouble? Contact Us "
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eti" />
+
+    <EditText
+        android:id="@+id/mobileNo"
+
+        android:layout_width="235dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Mobile No."
+        android:inputType="phone"
+        app:layout_constraintStart_toStartOf="@+id/etp"
+        app:layout_constraintTop_toBottomOf="@+id/etp" />
+
+    <EditText
+        android:id="@+id/dob"
+        android:layout_width="235dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="DOB"
+        android:inputType="date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iitbroll" />
+
+    <CheckBox
+        android:id="@+id/checkBoxTnC"
+        android:layout_width="81dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="91dp"
+        android:layout_marginTop="24dp"
+        android:text="Accept"
+        app:layout_constraintEnd_toStartOf="@+id/tnc"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dob" />
+
+    <TextView
+        android:id="@+id/tnc"
+        android:layout_width="195dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="27dp"
+        android:text="Terms and Condition"
+        android:textColor="#360DB5"
+        android:textSize="19dp"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxTnC"
+        app:layout_constraintTop_toBottomOf="@+id/dob" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="90dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
